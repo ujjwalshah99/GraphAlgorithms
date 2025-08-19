@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 #define pp pair<int,int>
@@ -32,7 +33,6 @@ void dijkstras(int src) {
         vis.insert(curr.second);
 
         for(auto neigh : gra[curr.second]) {
-            if(vis.count(neigh.first)) continue;
             if(mwt[neigh.first] > (curr.first+neigh.second)) {
                 mwt[neigh.first] = (curr.first+neigh.second);
                 par[neigh.first] = curr.second;

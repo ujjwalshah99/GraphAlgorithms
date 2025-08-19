@@ -1,4 +1,5 @@
 // to find sortest path in any graph having same wt we use dfs
+// to find 0-1 wt graph path we use deque
 
 // to find shortest path from src node to any node in DAG
 // TC -> O(V+E)

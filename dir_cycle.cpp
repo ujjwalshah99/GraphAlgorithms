@@ -25,7 +25,7 @@ class Solution {
         for(int ch : adj[no]) {
             if(vis[ch] && curr_path[ch]) return 1;
             if(!vis[ch]) {
-                if(check(adj,ch)) return 1;
+                if(check(adj,ch)) return 1; 
             }
         }
         curr_path[no]=0;

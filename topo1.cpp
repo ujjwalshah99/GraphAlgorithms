@@ -10,6 +10,7 @@ int v;
 vector<int> topo() {
     vector<int> indegree(v,0);
     vector<int> res;
+    // agr cycle hai to ek vis arr bhi leni padegi indeg store karate samay
     for(int par = 0 ; par<v ; par++) {
         for(auto ch : graph[par]) {
             indegree[ch]++;
