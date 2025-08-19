@@ -1,3 +1,4 @@
+// Algo to find the shortest distance of all the vertice from the source vertex S.
 // it is not used for negative weight cycle and also for any negative weights
 // undirected graphs with cycle too
 // TC -> O(Elog(V))
@@ -10,7 +11,6 @@ using namespace std;
 class Solution
 {
 	public:
-	// Algo to find the shortest distance of all the vertice from the source vertex S.
     vector <int> dijkstra(int V, vector<vector<int>> adj[], int S) {
         set<pair<int,int>> st;
         vector<int> dist(V,1e9);
