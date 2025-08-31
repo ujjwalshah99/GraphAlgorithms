@@ -5,6 +5,7 @@
 // SC -> O(V)
 // we can also use a queue in this implementation but it will not consider the shortest path to reach a node first
 // which will increase the TC cuz there are multiple paths to a node 
+// if (curr_dist != dist[curr_no]) continue; optimization
 
 #include <bits/stdc++.h>
 using namespace std;
