@@ -1,4 +1,4 @@
-
+// if (curr_dist != dist[curr_no]) continue; optimization
 #include<bits/stdc++.h>
 using namespace std;
 #define pp pair<int,int>
