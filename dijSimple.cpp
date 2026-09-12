@@ -31,6 +31,8 @@ class Solution {
             int curr_node = st.begin()->second;
             int curr_wt = st.begin()->first;
             st.erase(st.begin());
+
+            if(dist[curr]!=curr_dist) continue; // optimization line
             
             for(auto ch : gra[curr_node]) {
                 int ch_node = ch.first;
