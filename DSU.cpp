@@ -39,11 +39,12 @@ void union_rank(int a , int b) {
     a=find(a); b=find(b);
     if(a==b) return;
     if(rankd[a]<rankd[b]) {
-        rankd[b]++;
         par[a]=b;
-    } else {
-        rankd[a]++;
+    } else if(rankd[b]<rankd[a]){
         par[b]=a;
+    } else {
+        par[b] = a;
+        rank[a]++;
     }
 
     // alternate 
